@@ -1,6 +1,12 @@
-.navbar-color{
+.navbar-color {
     background-color: #02e394;
 }
 
-body { background: aliceblue; }
+body {
+    background: aliceblue;
+}
 
+p{
+    color: #34495e;
+    font-size: medium;
+}
