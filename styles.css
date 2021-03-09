@@ -4,9 +4,11 @@
 
 body {
     background: aliceblue;
+    padding-bottom: 70px;
 }
 
 p{
     color: #34495e;
     font-size: medium;
+    
 }
