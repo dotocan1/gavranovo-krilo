@@ -9,15 +9,16 @@
     <meta name="description" content="Prirodni Park Gavranovo Krilo, Gracisce">
     <meta name="keywords" content="slap, prirodni park, gracisce, gavranovo krilo">
     <title>Park Gavranovo krilo</title>
+
     <!-- OG META TAGS -->
-    <meta property="og:title" content="Prirodni Park Gavranovo Krilo"/>
-    <meta property="og:description" content="Prirodni Park Gavranovo Krilo, Gracisce"/>
-    <meta property="og:image" content="https://gavranovo.tk/images/logo-gavranovo.png"/>
-    <meta property="og:url" content="https://gavranovo.tk/"/>
-    <meta property="og:type" content="website"/>
-    <meta property="fb:app_id" content="479559366741348"/>
+    <meta property="og:title" content="Prirodni Park Gavranovo Krilo" />
+    <meta property="og:description" content="Prirodni Park Gavranovo Krilo, Gracisce" />
+    <meta property="og:image" content="https://gavranovo.tk/images/logo-gavranovo.png" />
+    <meta property="og:url" content="https://gavranovo.tk/" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="479559366741348" />
     <link rel="shortcut icon" href="./images/logo-gavranovo.png" type="image/x-icon">
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -28,6 +29,33 @@
 </head>
 
 <body>
+    <script>document.cookie = "SameSite=None; Secure";</script>
+    <!-- Facebook SDK starts here -->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/hr_HR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat plugin code -->
+    <div class="fb-customerchat" attribution="page_inbox" page_id="102123688541154">
+    </div>
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <!-- Facebook SDK ends here -->
 
     <!-- Navbar starts here -->
     <nav class="navbar navbar-expand-lg navbar-light  navbar-color fixed-top">
