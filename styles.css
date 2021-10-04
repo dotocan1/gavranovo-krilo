@@ -24,3 +24,6 @@ p{
     font-style: italic;
 }
 
+.large-padding{
+    padding: 2em;
+}
