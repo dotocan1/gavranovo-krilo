@@ -1,11 +1,337 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Asset Management</title>
-    <script src="https://unpkg.com/lodash@4.17.20"></script>
-  </head>
-  <body>
-    <script src="bundle.js"></script>
-  </body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="KIRx-oFOQhAseiheJ7V1OPrg1QUp77O9misvy4D90dI">
+    <meta name="description" content="Prirodni Park Gavranovo Krilo, Gracisce">
+    <meta name="keywords" content="slap, prirodni park, gracisce, gavranovo krilo">
+    <title>Park Gavranovo krilo</title>
+
+    <!-- OG META TAGS -->
+    <meta property="og:title" content="Prirodni Park Gavranovo Krilo">
+    <meta property="og:description" content="Prirodni Park Gavranovo Krilo, Gracisce">
+    <meta property="og:image" content="https://gavranovo.tk/images/logo-gavranovo.png">
+    <meta property="og:url" content="https://gavranovo.tk/">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="479559366741348">
+    <link type="image/x-icon" href="../images/logo-gavranovo.png" rel="shortcut icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- LineIcons -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>document.cookie = "SameSite=None; Secure";</script>
+    <!-- Facebook SDK starts here -->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/hr_HR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat plugin code -->
+    <div class="fb-customerchat" attribution="page_inbox" page_id="102123688541154">
+    </div>
+    
+    <script src="https://connect.facebook.net/en_US/sdk.js" async defer crossorigin="anonymous"></script>
+    <!-- Facebook SDK ends here -->
+
+    <!-- Navbar starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light  navbar-color fixed-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand mt-1" href="#"><img src="../images/logo-gavranovo.png" alt width="38" height="42">Gavranovo krilo</a>
+            <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-target="#exampleModal" data-bs-toggle="modal" href="#">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-target="#mapModal" data-bs-toggle="modal" href="#">Karta puta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://goo.gl/maps/kSijhx8i1pbesV4H6" target="_blank">Kako do
+                            nas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends here -->
+    <!-- Carousel with waterfall images starts here -->
+    <div class="container-fluid gx-0 mr-0 carousel-margin">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button" aria-current="true" aria-label="Slide 1"></button>
+                <button data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button" aria-label="Slide 2"></button>
+                <button data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/prva_slika.png" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/druga_slika.png" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/treca_slika.png" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Carousel with waterfall images ends here -->
+
+    <!-- Container for 'O nama ' and 'Pocetak projekta' starts here -->
+    <div class="container px-5 mt-lg-1 mt-sm-0">
+        <div class="row gx-5">
+            <div class="col-lg-6 col-sm-12 mt-4">
+                <h1>O slapu</h1>
+                <p>Slap Gavranovo krilo, koji se sastoji od nekoliko manjih i većih slapova i jezerca, proteže se kroz
+                    kilometarski dugu netaknutu prirodu u blizini naselja Gračišće u srcu Istre. Slap je originalno dio
+                    izvora
+                    koji se od starine naziva "Palonšćak", a njegov se tok nastavlja sve
+                    do rijeke Raše.</p>
+            </div>
+            <div class="col-lg-6 col-sm-12 mt-4">
+                <h1>Povijest slapa</h1>
+                <p>Iako najraniji službeni podaci na kartama datiraju iz 1820.g. gdje je jasno ucrtan
+                    mlin od kojega su ostali samo tragovi, povijest Gavranovog krila seže još u doba starih Rimljana i
+                    kasne antike. Naime, prema legendi, oko 500. godine slabila je snaga Vandala, koji su pustošili
+                    Europu, nekolicina njih uspjela se sakriti od novih osvajača. Nagađa se kako su na područje
+                    današnjeg Gračišća stigli sa Talijanskih otoka. Tada su u potrazi za hranom te najviše izvorom pitke
+                    vode, naišli na slap koji se danas naziva Gavranovo krilo. Kroz vrijeme, Vandali očigledno nisu
+                    uspjeli nastaviti potomstvo pa se selimo u doba starih Rimljana u čijim se spisima spominje
+                    "prekrasan
+                    slap" kod mjesta koje se tada nazivalo Gagli.
+                </p>
+            </div>
+            <div class="col-lg-12 col-sm-12 ml-5 mt-4">
+                <h1>Legenda o slapu</h1>
+                <p>Naročito je zanimljiva legenda o imenovanju ovog
+                    slabo istraženog bisera. Naime, nakon rimske vladavine, Gračišćanske zidine bile su godinama
+                    napuštene i izvan svih trgovačkih putova. Tako je bilo sve do 1199. godine kada se u povijesnim
+                    spisima prvi put spominje ime Galegnana, današnje Gračišće. Tadašnji župan Držiha bio je veliki
+                    ljubitelj slapa a legenda kaže kako je slap imao i nevjerojatna ljekovita svojstva. Kako kaže
+                    narodna predaja, slap je bio nastanjen jatima gavranova koji su crpili snagu upravo na tom slapu.
+                    Ljudi koji su obitavali spomenutim mjestom svjedoče čudesnim izlječenjima ranjenih gavranova nakon
+                    što bi se napojili s istoga. Jednom je prilikom ranjeni gavran slomljenog krila sletio na slap
+                    te se prema predaji samo nekoliko trenutaka kasnije (nakon što se napojio) vinuo u nebesa kao da
+                    nikada
+                    nije bio ranjen. Tada je slap dobio ime "Gavranovo krilo" u čast čudesnim izlječenjima ptica. Slap
+                    je nekada obitavao i raznim životinjskim životom pa su se u vodotoku mogle pronaći ribe, rakovi i
+                    ostale riječne životinje. Nažalost, prirodna selekcija je odradila svoje i život je iščeznuo nakon
+                    masovnog naseljevanja gavranova koji su se hranili riječnim životinjama. Vijest koja oduševljava
+                    jest da je
+                    ove, 2021. godine, na Gavranovom krilu ponovno pronađena rijetka vrsta riječnog raka Astacus,
+                    Crustecea, Arthropoda, inače rijetka zaštićena vrsta.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Container for 'O nama ' and 'Pocetak projekta' ends here -->
+
+    <!-- Navs&tabs with testimonials starts here -->
+    <!-- Section: Testimonials v.1 -->
+    <div class="container">
+        <section class="text-center my-5 p-1 mt-3 mb-5">
+
+            <!-- Section heading -->
+            <h1 class="h1-responsive font-weight-bold my-5 mt-0 mb-5">Izjave posjetioca</h1>
+            <!-- Section description -->
+
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                    <!--Card-->
+                    <div class="card testimonial-card">
+                        <!--Background color-->
+                        <div class="card-up info-color"></div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img class="rounded-circle img-fluid large-padding" src="../images/doktor.png">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">dr.med. Ivan Tokić</h4>
+                            <hr>
+                            <!--Quotation-->
+                            <p class="dark-grey-text mt-4 quote-italic">"Jako lijepo i mirno mjesto, savršeno za
+                                zdravlje vas i vaših članova obitelji."</p>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                    <!--Card-->
+                    <div class="card testimonial-card">
+                        <!--Background color-->
+                        <div class="card-up blue-gradient">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img class="rounded-circle img-fluid large-padding" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">Suzana Ivaninić - <small class="text-muted">zaposlena
+                                    mama</small></h4>
+                            <hr>
+                            <!--Quotation-->
+                            <p class="dark-grey-text mt-4 quote-italic">
+                                "Savršeno mjesto za obiteljski piknik!"</p>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6">
+                    <!--Card-->
+                    <div class="card testimonial-card">
+                        <!--Background color-->
+                        <div class="card-up indigo"></div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img class="rounded-circle img-fluid large-padding" src="../images/umirovljeniBiolog.png">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">dr.sc. Božo Juraniček - <small class="text-muted">umirovljeni biolog</small></h4>
+                            <hr>
+                            <!--Quotation-->
+                            <p class="dark-grey-text mt-4 quote-italic">"Priroda bogata endemskim životom, predivno
+                                mjesto kakvog nema nigdje drugdje u Hrvatskoj."</p>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+            </div>
+            <!-- Grid row -->
+        </section>
+    </div>
+    <!-- Section: Testimonials v.1 -->
+    <!-- Navs&tabs with testimonials ends here -->
+
+    <!-- Footer starts here -->
+    <!-- Footer -->
+    <!-- Container for footer starts here -->
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3  footer-position" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://www.facebook.com/Park-Gavranovo-krilo-Gra%C4%8Di%C5%A1%C4%87e-102123688541154">P.D.
+                Gavrani</a>
+        </div>
+    </footer>
+
+    <!-- Container for footer ends here -->
+    <!-- Modal for Contact starts here -->
+    <!-- Modal -->
+    <div id="exampleModal" class="modal fade" aria-hidden="true" aria-labelledby="exampleModalLabel" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="exampleModalLabel" class="modal-title">Kontaktirajte nas putem:</h5>
+                  <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-sm-12 col-lg-12">
+                          <!-- Section: Social media -->
+                          <section class="text-center">
+                              <!-- Facebook -->
+                              <a class="btn  btn-floating m-1" href="https://www.facebook.com/Park-Gavranovo-krilo-Gra%C4%8Di%C5%A1%C4%87e-102123688541154" role="button" style="font-size: 2em;"><i class="lni lni-facebook-original"></i></a>
+
+                              <!-- Google -->
+                              <a class="btn btn-floating m-1" href="mailto:gavranovo.krilo@gmail.com" role="button" style="font-size: 2em;"><i class="lni lni-google"></i></a>
+
+                                  <!-- Instagram -->
+                              <a class="btn btn-floating m-1" href="https://www.instagram.com/gavranovo_krilo/" role="button" style="font-size: 2em;"><i class="lni lni-instagram-original"></i></a>
+                          </section>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-dismiss="modal" type="button">U redu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Contact ends here -->
+
+    <!-- Modal for the map starts here -->
+
+    <!-- Modal -->
+    <div id="mapModal" class="modal fade" aria-hidden="true" aria-labelledby="exampleModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="exampleModalLabel" class="modal-title">Karta za kako doći do slapa:</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="mt-2">Upute do slapa:</h1>
+                            <img class="img-fluid" src="../images/mapa_gavranovoog.png" alt>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-primary" data-bs-dismiss="modal" type="button">U redu</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Modal for the map ends here -->
+
+    <!-- Bootstrap Javascript goes here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="./bundle.js"></script>
+</body>
 </html>
